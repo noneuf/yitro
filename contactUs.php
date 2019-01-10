@@ -26,7 +26,7 @@
             <main>
                 <div class='unit' id='contact_us'>
                     <h3>צור איתנו קשר </h3>
-                    <form action="/action_page.php" class="flex column">
+                    <form action="./registration.php" class="flex column">
                         <div class="flex">
                             <input type="text" name="fullName" id="name" placeholder="...הקלידו שם מלה"/>
                             <label>שם מלה</label>
@@ -43,6 +43,7 @@
                             <textarea id="freeText" name="text" placeholder="...כתבו לנו"></textarea>
                             <label>...תרשמו בכמה מילים על מה שאתם מחפשים</label>
                         </div>
+                        <button type="submit" name="submit">שלח</button>
                     </form>
                 </div>
             </main>
