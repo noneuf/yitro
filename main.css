@@ -126,6 +126,15 @@ footer {
     margin: 20px;
 }
 
+.iconStyle {
+    background: tomato;
+    transition: background-color 0.5s ease;
+}
+
+.iconStyle:hover {
+    background: red;
+}
+
 /* id's */
 
 #specificId {

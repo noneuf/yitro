@@ -1,47 +1,26 @@
 <?php
 include './config/db.php';
+include './include/header.php';
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Heebo:700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-</head>
-<body>
-    <div class="flex">
-        <div class="flex column mainWidth">
-            <header class="headerStyle flex column justifyContent">
-                <h1 class="headerContent titleStyle">YITRO</h1>
-                <h2 class="headerContent subtitleStyle">
-                אנחנו נביא את הארגון למקום אפקטיבי ויעיל יותר
-                </h2>
-            </header>
             <main>
                 <!-- shlomi's code here -->
                 <div class='main_unit'>
                     <div class="flex column questionSectionStyle">
                         <div class="flex justifyContent align specificQuestionStyle">
                             <a class="decoration" href='#client1'><h2 class="questionStyle">האם אתה עסק המחפש לגדול?</h2></a>
-                            <div class="navigationSquare flex justifyContent align">
+                            <div class="navigationSquare flex justifyContent align iconStyle">
                             <i class="fas fa-plane-departure iconFontSize"></i>
                             </div>
                         </div>
                         <div class="flex justifyContent align specificQuestionStyle">
                             <a class="decoration" href='#client2'><h2 class="questionStyle">מחפש מימון למוצרים חדשים?</h2></a>
-                            <div class="navigationSquare flex justifyContent align">
+                            <div class="navigationSquare flex justifyContent align iconStyle">
                                 <i class="fas fa-credit-card iconFontSize"></i>
                             </div>
                         </div>
                         <div class="flex justifyContent align specificQuestionStyle">
                             <a class="decoration" href='#client3'><h2 class="questionStyle">מעונינים להתפתח לאפיק חדש?</h2></a>
-                            <div class="navigationSquare flex justifyContent align">
+                            <div class="navigationSquare flex justifyContent align iconStyle">
                                 <i class="fas fa-archway iconFontSize"></i>
                             </div>
                         </div>
@@ -96,53 +75,15 @@ include './config/db.php';
                         </p>
                     </div>
                 </div>
-                <div class='unit' id='contact_us'>
-                    <h3>צור איתנו קשר </h3>
-                    <form action="/action_page.php">
-                        <label for="name">שם ומשפחה:</label>
-                        <input type="text" id="name" name="name" placeholder="השם פרטי שלך">
-
-
-                        <label for="name_bis">שם העסק:</label>
-                        <input type="text" id="name_bis" name="name_bis" placeholder="שם העסק שלך">
-
-                        <label for="phone">טלפון:</label>
-                        <input type="number" id="phone" name="phone" placeholder="מספר הטלפון שלך">
-
-                        <label for="email">מייל:</label>
-                        <input type="email" id="email" name="email" placeholder="כתובת המייל שלך">
-
-                        <br>
-                        <label for="subject">כתבו לנו:</label>
-                        <br>
-                        <textarea id="subject" name="subject" placeholder="כתבו לנו קצת על עצמכם" ></textarea>
-                        <br>
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
             </main>
         </div>
-        <div class="menuStyle">
-            <div class="flex column menuStyle position">
-                <h2 class="titleInMenuStyle">YITRO</h2>
-                <ul class="menu flex column align">
-                    <li><a href="index.php">עמוד ראשי</a></li>
-                    <li><a href="aboutUs.php">עלינו</a></li>
-                    <li><a href="">השירותים שלנו</a></li>
-                    <li><a href="contactUs.php">צור קשר</a></li>
-                </ul>
-                <div class="flex justifyContent" id="specificId">
-                    <i class="fab fa-facebook-f socialIconsStyle"></i>
-                    <i class="fab fa-twitter socialIconsStyle"></i>
-                    <i class="fab fa-pinterest-p socialIconsStyle"></i>
-                    <i class="fab fa-instagram socialIconsStyle"></i>
-                </div>
-            </div>        
-        </div>
+        <?php
+        include './include/menu.php'
+        ?>
     </div>
-    <footer>
-        <small>&copy Nathan Goel and Shlomi Hudedi - 2019</small>
-    </footer>
+    <?php 
+    include './include/footer.php';
+    ?>
 </body>
 </html>
 
