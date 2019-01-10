@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    padding: 0;
+}
+
+footer {
+    height: 20px;
+    width: 100%;
+    background: tomato;
+}
+
+.questionSectionStyle {
+    height: 60vh;
+
+}
+
+.headerStyle {
+    width: 100%;
+    height: 40vh;
+    background: tomato;
+    background-image: url("images/buildings.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headerContent {
+    text-align: center;
+    margin: 10px 30px 10px 30px;
+}
+
+.titleInMenuStyle {
+    margin: 200px 0 0 0;
+    text-align: center; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.subtitleStyle {
+    font-family: 'Heebo', sans-serif;
+}
+
+.titleStyle {
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.justifyContent {
+    justify-content: center;
+}
+
+.menuStyle {
+    background: rgb(110, 101, 99);
+    width: 20%;
+    height: auto;
+}
+
+.menu li {
+    list-style-type: none;
+    text-align: right;
+    padding: 15px;    
+}
+
+.menu li a {
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: 'Heebo', sans-serif;
+    color: #fff;
+}
+
+.align {
+    align-items: center;
+}
+
+.iconFontSize {
+    font-size: 30px;
+}
+
+.position {
+    position: fixed;
+}
+
+.mainWidth {
+    width: 80%;
+}
+
+.socialIconsStyle {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.navigationSquare {
+    width: 100px;
+    height: 100px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.decoration {
+    text-decoration: none;
+}
+
+.socialIconsStyle:hover {
+    color: #fff;
+}
+
+.questionStyle {
+    color: rgb(105, 156, 252);
+    font-family: 'Heebo', sans-serif;
+}
+
+.specificQuestionStyle {
+    margin: 20px;
+}
+
+/* id's */
+
+#specificId {
+    margin-top: 12vw;
+}
+
+/* shlomi's code */
+
+.div_nav{
+    width: 20vw;
+    height: 100%;
+    
+    }
+    .main_unit{
+        width: 80vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        direction: rtl;
+    }
+    
+    .head{height: 15vw;
+    }
+    
+    h3{color: rgb(241, 176, 159);
+        font-family: 'Heebo', sans-serif;
+    }
+    
+    p{color: white;
+         font-family: 'Heebo', sans-serif;
+    }
+
+
+    
+    .unit{border: 2px solid rgb(253, 248, 246);
+        border-radius: 5px;
+        width:100%;
+        height: 300px;
+        background-color: rgb(180, 223, 223);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        /*
+        background-image: url(https://cdns.klimg.com/merdeka.com/i/w/news/2019/01/02/1035894/670x335/4-tanda-anda-tidak-siap-memulai-bisnis.jpg);
+        background-size: cover;
+        */
+      }
+    
+    input{
+        width: 200px;
+        padding: 4px;
+        display: inline-block;
+        border: 1px solid rgb(92, 88, 88);
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-family: 'Heebo', sans-serif;
+      }
+    
+      textarea{ width: 400px;
+        height: 100px;
+        padding: 4px;
+        border: 1px solid rgb(92, 88, 88);
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-family: 'Heebo', sans-serif;}
+    
+    
+    
+    
