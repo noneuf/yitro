@@ -6,8 +6,36 @@ html {
     scroll-behavior: smooth;
 }
 
+button {
+    height: 35px;
+    width: 70px;
+    border-radius: 5px;
+    margin: 10px 10px 10px 0;
+    font-family: 'Heebo', sans-serif;
+    background: tomato;
+    color: #fff;
+}
+
+textarea {
+    margin: 7px 10px 0 0;
+    height: 70px;
+    font-size: 16px;
+    text-align: right;
+    box-shadow: rgb(142, 141, 141) 2px 2px 3px;
+    border-radius: 5px;
+    width: 446px;
+}
+
 ul {
     padding: 0;
+}
+
+label {
+    margin: 10px;
+    color: tomato;
+    font-family: 'Heebo', sans-serif;
+    text-shadow: 2px 2px 3px #000000;
+    font-size: 2.3vw;
 }
 
 footer {
@@ -19,6 +47,15 @@ footer {
 .questionSectionStyle {
     height: 60vh;
 
+}
+
+.inputMargin input {
+    margin-top: 7px;
+    height: 30px;
+    font-size: 16px;
+    text-align: right;
+    box-shadow: 2px 2px 3px #8e8d8d;
+    border-radius: 5px;
 }
 
 .headerStyle {
@@ -35,10 +72,21 @@ footer {
     margin: 10px 30px 10px 30px;
 }
 
+.noStyle {
+    color: black;
+}
+
 .titleInMenuStyle {
     margin: 200px 0 0 0;
     text-align: center; 
     font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+    transition: 0.2s ease;
+}
+
+.titleInMenuStyle:hover {
+    color: rgb(51, 51, 51);
+    font-size: 2.1vw;
 }
 
 .subtitleStyle {
@@ -47,6 +95,9 @@ footer {
 
 .titleStyle {
     font-family: 'Roboto', sans-serif;
+    font-size:6vw;
+    color: #FFF;
+    text-decoration: underline;
 }
 
 .flex {
@@ -80,8 +131,30 @@ footer {
     color: #fff;
 }
 
+
 .align {
     align-items: center;
+}
+
+.alignLeft {
+    align-items: left;
+}
+
+.alignAlt {
+    align-items: flex-end;
+}
+
+.inputMargin {
+    margin: 2px;
+}
+
+.align li a {
+    transition: 0.2s ease;
+}
+
+.align li a:hover {
+    color: tomato;
+    font-size: 1.5vw;
 }
 
 .iconFontSize {
@@ -102,8 +175,8 @@ footer {
 }
 
 .navigationSquare {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border: 1px solid grey;
     border-radius: 50%;
     margin-right: 40px;
@@ -118,8 +191,10 @@ footer {
 }
 
 .questionStyle {
-    color: rgb(105, 156, 252);
+    color: rgb(130, 130, 130);
     font-family: 'Heebo', sans-serif;
+    text-shadow: 2px 2px 3px #000000;
+    font-size: 3vw;
 }
 
 .specificQuestionStyle {
@@ -127,12 +202,146 @@ footer {
 }
 
 .iconStyle {
-    background: tomato;
+    background: #6f9fe6;
     transition: background-color 0.5s ease;
 }
 
 .iconStyle:hover {
-    background: red;
+    background: rgb(187, 200, 111);
+}
+
+.backgroundUnit {
+    /* background-image: url("images/saving.jpg"); */
+    background: #e3e9f6;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.backgroundUnit1 {
+    background-image: url("images/explain.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.backgroundUnit2 {
+    background-image: url("images/coins.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.backgroundUnit3 {
+    background-image: url("images/hands.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.backgroundUnit4 {
+    background-image: url("images/columns.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.backgroundUnit5 {
+    background-image: url("images/contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.backgroundUnit6 {
+    background-image: url("images/mounts.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.backgroundUnit1:hover {
+    filter: blur(0px);
+}
+.backgroundUnit2:hover {
+    filter: blur(0px);
+}
+.backgroundUnit3:hover {
+    filter: blur(0px);
+}
+.backgroundUnit4:hover {
+    filter: blur(0px);
+}
+
+.unit p {
+    padding: 0 111px 0 111px;
+    color: #26bfbf;
+    font-size: 20px;
+    text-shadow: 2px 2px 3px #000000;
+}
+
+.aboutUs p {
+    padding: 0 111px 0 111px;
+    color: #c79312;
+    font-size: 20px;
+    text-shadow: 2px 2px 3px #000000;
+}
+
+.unit h3 {
+    font-size: 25px;
+    text-shadow: 2px 2px 3px #000000;
+    color: #fff;
+}
+
+.unitAlt2 h3{
+    color: black;
+    font-size: 25px;
+    text-shadow: 2px 2px 3px #000000;
+}
+
+.unitAlt2 p {
+    padding: 0 111px 0 111px;
+    color: #26bfbf;
+    font-size: 20px;
+    text-shadow: 2px 2px 3px #000000;
+}
+
+.aboutUs h3 {
+    font-size: 25px;
+    text-shadow: 2px 2px 3px #000000;
+}
+
+.aboutUs {
+    border: 1.5px solid rgb(253, 248, 246);
+    width:100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.unit {
+    border: 1.5px solid rgb(253, 248, 246);
+    width:100%;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.unitAlt2 {
+    border: 1.5px solid rgb(253, 248, 246);
+    width:100%;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.unitAlt {
+    border: 1.5px solid rgb(253, 248, 246);
+    width:100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* id's */
@@ -140,70 +349,3 @@ footer {
 #specificId {
     margin-top: 12vw;
 }
-
-/* shlomi's code */
-
-.div_nav{
-    width: 20vw;
-    height: 100%;
-    
-    }
-    .main_unit{
-        width: 80vw;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        direction: rtl;
-    }
-    
-    .head{height: 15vw;
-    }
-    
-    h3{color: rgb(241, 176, 159);
-        font-family: 'Heebo', sans-serif;
-    }
-    
-    p{color: white;
-         font-family: 'Heebo', sans-serif;
-    }
-
-
-    
-    .unit{border: 2px solid rgb(253, 248, 246);
-        border-radius: 5px;
-        width:100%;
-        height: 300px;
-        background-color: rgb(180, 223, 223);
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    
-        /*
-        background-image: url(https://cdns.klimg.com/merdeka.com/i/w/news/2019/01/02/1035894/670x335/4-tanda-anda-tidak-siap-memulai-bisnis.jpg);
-        background-size: cover;
-        */
-      }
-    
-    input{
-        width: 200px;
-        padding: 4px;
-        display: inline-block;
-        border: 1px solid rgb(92, 88, 88);
-        border-radius: 5px;
-        box-sizing: border-box;
-        font-family: 'Heebo', sans-serif;
-      }
-    
-      textarea{ width: 400px;
-        height: 100px;
-        padding: 4px;
-        border: 1px solid rgb(92, 88, 88);
-        border-radius: 5px;
-        box-sizing: border-box;
-        font-family: 'Heebo', sans-serif;}
-    
-    
-    
-    
