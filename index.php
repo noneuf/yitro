@@ -4,27 +4,6 @@ include './include/header.php';
 ?>
             <main>
                 <div class='main_unit'>
-                    <div class="flex column questionSectionStyle backgroundUnit">
-                        <div class="flex justifyContent align specificQuestionStyle">
-                            <div class="navigationSquare flex justifyContent align iconStyle">
-                            <i class="fas fa-plane-departure iconFontSize"></i>
-                            </div>
-                            <a class="decoration" href='#client1'><h2 class="questionStyle">?האם אתה עסק המחפש לגדול</h2></a>
-                        </div>
-                        <div class="flex justifyContent align specificQuestionStyle">
-                            <div class="navigationSquare flex justifyContent align iconStyle">
-                                <i class="fas fa-credit-card iconFontSize"></i>
-                            </div>
-                            <a class="decoration" href='#client2'><h2 class="questionStyle">?מחפש מימון למוצרים חדשים</h2></a>
-                        </div>
-                        <div class="flex justifyContent align specificQuestionStyle">
-                            <div class="navigationSquare flex justifyContent align iconStyle">
-                                <i class="fas fa-archway iconFontSize"></i>
-                            </div>
-                            <a class="decoration" href='#client3'><h2 class="questionStyle">?מעונינים להתפתח לאפיק חדש</h2></a>
-                        </div>
-                    </div>
-
                     <div class='unit backgroundUnit1' id='offer'>
                         <h3>מה אנחנו מציעים ביתרו?</h3>
                         <p>

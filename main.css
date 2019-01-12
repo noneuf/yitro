@@ -253,19 +253,6 @@ footer {
     background-size: cover;
 }
 
-.backgroundUnit1:hover {
-    filter: blur(0px);
-}
-.backgroundUnit2:hover {
-    filter: blur(0px);
-}
-.backgroundUnit3:hover {
-    filter: blur(0px);
-}
-.backgroundUnit4:hover {
-    filter: blur(0px);
-}
-
 .unit p {
     padding: 0 111px 0 111px;
     color: #26bfbf;
