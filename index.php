@@ -3,30 +3,29 @@ include './config/db.php';
 include './include/header.php';
 ?>
             <main>
-                <!-- shlomi's code here -->
                 <div class='main_unit'>
-                    <div class="flex column questionSectionStyle">
+                    <div class="flex column questionSectionStyle backgroundUnit">
                         <div class="flex justifyContent align specificQuestionStyle">
-                            <a class="decoration" href='#client1'><h2 class="questionStyle">האם אתה עסק המחפש לגדול?</h2></a>
                             <div class="navigationSquare flex justifyContent align iconStyle">
                             <i class="fas fa-plane-departure iconFontSize"></i>
                             </div>
+                            <a class="decoration" href='#client1'><h2 class="questionStyle">?האם אתה עסק המחפש לגדול</h2></a>
                         </div>
                         <div class="flex justifyContent align specificQuestionStyle">
-                            <a class="decoration" href='#client2'><h2 class="questionStyle">מחפש מימון למוצרים חדשים?</h2></a>
                             <div class="navigationSquare flex justifyContent align iconStyle">
                                 <i class="fas fa-credit-card iconFontSize"></i>
                             </div>
+                            <a class="decoration" href='#client2'><h2 class="questionStyle">?מחפש מימון למוצרים חדשים</h2></a>
                         </div>
                         <div class="flex justifyContent align specificQuestionStyle">
-                            <a class="decoration" href='#client3'><h2 class="questionStyle">מעונינים להתפתח לאפיק חדש?</h2></a>
                             <div class="navigationSquare flex justifyContent align iconStyle">
                                 <i class="fas fa-archway iconFontSize"></i>
                             </div>
+                            <a class="decoration" href='#client3'><h2 class="questionStyle">?מעונינים להתפתח לאפיק חדש</h2></a>
                         </div>
                     </div>
 
-                    <div class='unit' id='offer'>
+                    <div class='unit backgroundUnit1' id='offer'>
                         <h3>מה אנחנו מציעים ביתרו?</h3>
                         <p>
                             בשלב הראשון נלמד את הארגון, כיצד הוא מתנהל, מה הם גורמי הסביבה המשפעים ומה הם הגורמים הפנימים
@@ -34,15 +33,11 @@ include './include/header.php';
                             ותחת אילו אילוצים הארגון צריך להתנהל. בסוף שלב זה אנו מציגים לארגון תמונת שיקוף של הארגון ושל המצב
                             הפיננסי. <br>
                             תמונת השיקוף מאפשרת לארגון לראות את ההשתקפות הארגונית שלו. לזהות את החוזקות, החולשות ונקודות לשיפור
-                            וייעול. <br>
-                            בשלב זה בדרך כלל נציג את המפה המומלצת עבור הארגון והמחלקות השונות הן מבחינה ארגונית והן מבחינה
-                            פיננסית.<br>
-                            לאחר מכן נפעל בליווי צמוד על מנת ליישם ולהטמיע את השינויים על פי מפת הדרכים שגיבשנו. <br>
-                            כל זה על מנת להביא את הארגון ליעילות לאפקטיביות גדולה יותר משהיה. <br>
+                            וייעול.
                         </p>
                     </div>
 
-                    <div class='unit' id='client1'>
+                    <div class='unit backgroundUnit2' id='client1'>
                         <h3>ליווי ויעוץ אירגונים מתפתחים:</h3>
                         <p>
                             ארגונים מתפתחים הם אירגונים שנמצאים בשלב שונה מארגונים שכבר מבוססים <br>
@@ -52,7 +47,7 @@ include './include/header.php';
                         </p>
                     </div>
 
-                    <div class='unit' id='client2'>
+                    <div class='unitAlt2 backgroundUnit3' id='client2'>
                         <h3>ליווי ויעוץ אירגונים קטנים:</h3>
                         <p>
                             ארגונים קטנים מצריכים ליווי ויעוץ שונה מארגונים גדולים. <br>
@@ -64,7 +59,7 @@ include './include/header.php';
                         </p>
                     </div>
 
-                    <div class='unit' id='client3'>
+                    <div class='unit backgroundUnit4' id='client3'>
                         <h3>ליווי ויעוץ אירגונים גדולים :</h3>
                         <p>
                             ארגונים גדולים בדרך כלל מתאפיינים בקצב מסוים שבו ארגון מתנהל. <br>
