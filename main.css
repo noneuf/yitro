@@ -1,70 +1,54 @@
 body {
     margin: 0;
+    font-family: 'Heebo', sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-button {
-    height: 35px;
-    width: 70px;
-    border-radius: 5px;
-    margin: 10px 10px 10px 0;
+#myBtn {
+    position: fixed;
+    bottom: 2vw;
+    left: 2vw;
+    z-index: 99;
+    font-size: 45px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: -1px;
+    border-radius: 50%;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+/* header styles */
+.subtitleStyle {
     font-family: 'Heebo', sans-serif;
-    background: tomato;
-    color: #fff;
+    color: #ffb3b3;
+    text-shadow: 2px 2px 8px #0e0e0e;
 }
 
-textarea {
-    margin: 7px 10px 0 0;
-    height: 70px;
-    font-size: 16px;
-    text-align: right;
-    box-shadow: rgb(142, 141, 141) 2px 2px 3px;
-    border-radius: 5px;
-    width: 446px;
-}
-
-ul {
-    padding: 0;
-}
-
-label {
-    margin: 10px;
-    color: tomato;
-    font-family: 'Heebo', sans-serif;
-    text-shadow: 2px 2px 3px #000000;
-    font-size: 2.3vw;
-}
-
-footer {
-    height: 20px;
-    width: 100%;
-    background: tomato;
-}
-
-.questionSectionStyle {
-    height: 60vh;
-
-}
-
-.inputMargin input {
-    margin-top: 7px;
-    height: 30px;
-    font-size: 16px;
-    text-align: right;
-    box-shadow: 2px 2px 3px #8e8d8d;
-    border-radius: 5px;
+.titleStyle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 6vw;
+    color: white;
+    text-shadow: 2px 2px 8px #0e0e0e;
+    text-decoration: underline;
 }
 
 .headerStyle {
     width: 100%;
     height: 40vh;
-    background: tomato;
-    background-image: url("images/buildings.jpg");
+    background: rgb(194, 194, 194);
+    background-image: url("images/header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 0px -12vw;
 }
 
 .headerContent {
@@ -72,8 +56,24 @@ footer {
     margin: 10px 30px 10px 30px;
 }
 
-.noStyle {
-    color: black;
+/* menu styles */
+.align li a {
+    transition: 0.2s ease;
+}
+
+.align li a:hover {
+    color: midnightblue;
+    font-size: 1.5vw;
+}
+
+ul {
+    padding: 0;
+}
+
+.menuStyle {
+    background: linear-gradient(#fff, rgb(97, 97, 97))fixed;
+    width: 18%;
+    height: auto;
 }
 
 .titleInMenuStyle {
@@ -82,23 +82,155 @@ footer {
     font-family: 'Roboto', sans-serif;
     text-decoration: underline;
     transition: 0.2s ease;
+    color: #a70303;
 }
 
 .titleInMenuStyle:hover {
-    color: rgb(51, 51, 51);
+    color: #fff;
     font-size: 2.1vw;
 }
 
-.subtitleStyle {
-    font-family: 'Heebo', sans-serif;
+.menu li {
+    list-style-type: none;
+    text-align: right;
+    padding: 15px;    
 }
 
-.titleStyle {
-    font-family: 'Roboto', sans-serif;
-    font-size:6vw;
-    color: #FFF;
-    text-decoration: underline;
+.menu li a {
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: 'Heebo', sans-serif;
+    color: #fff;
 }
+
+.backToTopStyle {
+    font-size: 65px;
+    top: 61vw;
+    left: 73vw;
+    position: fixed;
+}
+
+
+/* index.php styles */
+.positionRelative {
+    position: relative;
+}
+
+.positionAbsolute {
+    position: absolute;
+}
+
+/* this is related to the background image, to have opacity. */
+.background1 {
+    position: relative;
+}
+
+/* this pseudo elmement is here to have opacity to the background image without afecting 
+the rest of the elements on it */
+.background1::after {
+  content: "";
+  background-image: url("images/explain.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -4vw;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+/* this is related to the background image, to have opacity. */
+.background2 {
+    position: relative;
+}
+
+/* this pseudo elmement is here to have opacity to the background image without afecting 
+the rest of the elements on it */
+.background2::after {
+  content: "";
+  background-image: url("images/coins.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -9vw;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+/* this is related to the background image, to have opacity. */
+.background3 {
+    position: relative;
+}
+
+/* this pseudo elmement is here to have opacity to the background image without afecting 
+the rest of the elements on it */
+.background3::after {
+  content: "";
+  background-image: url("images/columns.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -56vw;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+/* this is related to the background image, to have opacity. */
+.background4 {
+    position: relative;
+}
+
+/* this pseudo elmement is here to have opacity to the background image without afecting 
+the rest of the elements on it */
+.background4::after {
+  content: "";
+  background-image: url("images/buildings.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -3vw;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.content {
+    border: 1px solid grey;
+    border-radius: 50%;
+    width: 11vw;
+    height: 11vw;
+    background: linear-gradient(#9a4646, #fff);
+    color: #fff;
+    box-shadow: 0px 0px 30px #000000;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.content:hover {
+    background: linear-gradient(#fff, #9a4646);
+    color: rgb(0, 0, 0);
+}
+
+.sectionStyle {
+    width: 100%;
+    height: 50vh;
+}
+
+/* functional styles */
 
 .flex {
     display: flex;
@@ -112,11 +244,118 @@ footer {
     justify-content: center;
 }
 
-.menuStyle {
-    background: rgb(110, 101, 99);
-    width: 20%;
-    height: auto;
+.justifyContentEnd {
+    justify-content: flex-end;
 }
+
+.align {
+    align-items: center;
+}
+
+.textAlign {
+    text-align: center;
+}
+
+.alignContent {
+    align-items: flex-end;
+}
+
+
+/* aboutUs.php */
+.showButton {
+    display: block
+}
+
+.hideButton {
+    display: none;
+}
+
+.aboutUsText {
+    margin-right: 20px;
+    width: 362vw;
+    text-align: right;
+}
+
+.rivkaPicStyle {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 10px 18px #888888;
+    margin: 5vw 0 5vw 10vw;
+}
+
+.more {
+    width: 70%;
+    text-align: end;
+}
+
+.contentMargin {
+    margin: 0 20px 20px 0;
+}
+
+.aStyle {
+    color: blue;
+    cursor: pointer;
+}
+
+.textStyle {
+    width: 40vw;
+    margin: 0 10vw 5vw 0;
+}
+
+.aboutMe {
+    margin: 5vw 10vw 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+
+
+
+
+label {
+    margin: 10px;
+    color: tomato;
+    font-family: 'Heebo', sans-serif;
+    text-shadow: 2px 2px 3px #000000;
+    font-size: 2.3vw;
+}
+
+footer {
+    height: 20px;
+    width: 100%;
+    background: #6d6562;
+}
+
+
+
+.noStyle {
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
 
 .menu li {
     list-style-type: none;
@@ -148,14 +387,7 @@ footer {
     margin: 2px;
 }
 
-.align li a {
-    transition: 0.2s ease;
-}
 
-.align li a:hover {
-    color: tomato;
-    font-size: 1.5vw;
-}
 
 .iconFontSize {
     font-size: 30px;
@@ -166,7 +398,7 @@ footer {
 }
 
 .mainWidth {
-    width: 80%;
+    width: 82%;
 }
 
 .socialIconsStyle {
@@ -260,12 +492,7 @@ footer {
     text-shadow: 2px 2px 3px #000000;
 }
 
-.aboutUs p {
-    padding: 0 111px 0 111px;
-    color: #c79312;
-    font-size: 20px;
-    text-shadow: 2px 2px 3px #000000;
-}
+
 
 .unit h3 {
     font-size: 25px;
@@ -286,20 +513,7 @@ footer {
     text-shadow: 2px 2px 3px #000000;
 }
 
-.aboutUs h3 {
-    font-size: 25px;
-    text-shadow: 2px 2px 3px #000000;
-}
 
-.aboutUs {
-    border: 1.5px solid rgb(253, 248, 246);
-    width:100%;
-    height: auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 .unit {
     border: 1.5px solid rgb(253, 248, 246);

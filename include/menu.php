@@ -6,7 +6,6 @@
     <ul class="menu flex column align">
         <li><a href="../index.php">עמוד ראשי</a></li>
         <li><a href="../aboutUs.php">עלינו</a></li>
-        <li><a href="">השירותים שלנו</a></li>
         <li><a href="contactUs.php">צור קשר</a></li>
     </ul>
     <div class="flex justifyContent" id="specificId">
