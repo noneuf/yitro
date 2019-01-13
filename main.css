@@ -83,6 +83,7 @@ ul {
     text-decoration: underline;
     transition: 0.2s ease;
     color: #a70303;
+    text-shadow: 1px 1px 4px #0e0e0e;
 }
 
 .titleInMenuStyle:hover {
@@ -236,6 +237,14 @@ the rest of the elements on it */
     display: flex;
 }
 
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.flexDir {
+    flex-direction: row-reverse
+}
+
 .column {
     flex-direction: column;
 }
@@ -307,6 +316,82 @@ the rest of the elements on it */
     margin: 5vw 10vw 0 0;
 }
 
+/* contactUs styles */
+
+.contactUsStyle {
+    direction: rtl;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.inputStyle {
+    width: 40%;
+    height: 30px;
+    font-size: 15px;
+    background: #ececec;
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: 5px 8px 22px #ffffff inset;
+}
+
+.inputStyle:focus {
+    box-shadow: 5px 8px 22px #fddcdc inset;
+}
+
+.textAreaStyle {
+    width: 90%;
+    height: 90px;
+    font-size: 15px;
+    background: #ececec;
+    border-radius: 5px;
+    box-shadow: 5px 8px 22px #ffffff inset;
+    border-width: 1px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+.textAreaStyle:focus {
+    box-shadow: 5px 8px 22px #fddcdc inset;
+}
+
+.firstButton {
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    background: dodgerblue;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 900;
+    margin: 10px 0;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #888888;
+    transition-duration: 0.5s;
+}
+
+.firstButton:active {
+    background: #143f9b;
+}
+
+.formSection {
+    width: 50%;
+}
+
+.contactUsImgStyle {
+    width: 50%;
+}
+
+.mailIconStyle {
+    font-size: 20vw;
+    margin: auto;
+    text-shadow: 5px 10px 18px #888888;
+}
+
+
+
+
+
+
 
 
 
@@ -324,21 +409,12 @@ the rest of the elements on it */
     display: block;
 }
 
-
-
-
-label {
-    margin: 10px;
-    color: tomato;
-    font-family: 'Heebo', sans-serif;
-    text-shadow: 2px 2px 3px #000000;
-    font-size: 2.3vw;
-}
-
 footer {
-    height: 20px;
+    height: 30px;
     width: 100%;
-    background: #6d6562;
+    background: rgb(97, 97, 97);
+    color: #fff;
+    padding: 5px 10px;
 }
 
 
