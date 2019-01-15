@@ -1,12 +1,12 @@
 <?php
 include './include/header.php';
 ?>
-            <main class="flex flexDir">
-                <span><img class="rivkaPicStyle"src="./images/rivka.jpg"/></span>
+            <main class="flex flexDir mobileColumn">
+                <span class="mobileStyleForPicParent"><img class="rivkaPicStyle mobilePicStyle"src="./images/rivka.jpg"/></span>
                 <span class="flex column contentMargin">
                     <h3 class="aboutMe"> קצת עלי:</h3>
-                    <div class="textStyle flex column">
-                        <p class="more"> שמי רבקה גואל, את הדרך שלי בתחום הייעוץ התחלתי דווקא בצבא: התגייסתי לחיל הים לתפקיד
+                    <div class="textStyle textStyleMobile flex column">
+                        <p class="more moreMobile"> שמי רבקה גואל, את הדרך שלי בתחום הייעוץ התחלתי דווקא בצבא: התגייסתי לחיל הים לתפקיד
                             בקרית סימולטורים. התפקיד העיקרי שלי היה לאמן יחידות שונות בחייל תוך ליווי ומתן ביקורת בונה
                             ליחדות השונות, שם גיליתי את מתנת הייעוץ שלי. אחרי השחרור שלי מהמערכת הצבאית התקדמתי
                             לכוון למידת תואר ראשון בכלכלה וניהול.

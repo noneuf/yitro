@@ -619,5 +619,60 @@ the rest of the elements on it */
 
 /* vision.php styles */
 
+/* aboutUs.php */
+@media screen and (max-width: 1024px) {
+    .mobileColumn {
+        flex-direction: column;
+    }
+
+    .mobileStyleForPicParent {
+        margin: 0 auto;
+    }
+
+    .mobilePicStyle {
+        width: 64vw;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 5px 10px 18px #888888;
+        margin: 5vw;
+    }
+
+    .textStyleMobile {
+        width: 80%;
+        margin: 0 10vw 5vw 0vw;
+    }
+
+    .moreMobile {
+        width: 90%;
+    }
+}
+
+/* contactUs.php */
+
+@media screen and (max-width: 1024px) {
+    .inputStyleMobile {
+        width: 78vw;
+    }
+}
+
+/* vision.php */
+
+@media screen and (max-width: 1024px) {
+
+    .picStyleMobile {
+        width: 80%;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .textStyleMobile {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .buttonAltMargMobile {
+        margin: 43px auto;
+    }
+}
 
 

@@ -1,14 +1,14 @@
 <?php
 include './include/header.php';
 ?>
-            <main class="visionMainStyle flex">
+            <main class="visionMainStyle flexDir flex mobileColumn">
+                <img class="grothPictureStyle picStyleMobile" src="./images/smallCorp.jpg"/>
                 <div class="flex column">
-                    <p class="visionTextStyle">
+                    <p class="visionTextStyle textStyleMobile">
                     ארגונים קטנים  מצריכים ליווי ויעוץ שונה מארגונים גדולים. בדרך כלל ארגונים קטנים הם יותר גמישים, היכולת שלהם ליישם שינוים  היא יותר מהירה אך ישנם אתגרים רבים אחרים. לכן ליווי ויעוץ ארגוני מצריכים חשיבה שלוקחת בחשבון את מכלול הנתונים ושמתאימה את התוכנית לארגון הספציפי.                    
                     </p>
-                    <a href="./index.php" class="firstButtonAlt buttonAltMarg" type="button" name="back">חזרה לעמוד ראשי</a>
+                    <a href="./index.php" class="firstButtonAlt buttonAltMarg buttonAltMargMobile" type="button" name="back">חזרה לעמוד ראשי</a>
                 </div>
-                <img class="grothPictureStyle" src="./images/smallCorp.jpg"/>
             </main>
         </div>
         <?php
