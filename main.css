@@ -1,70 +1,73 @@
 body {
     margin: 0;
+    font-family: 'Heebo', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
 }
 
 html {
     scroll-behavior: smooth;
+    direction: rtl;
 }
 
-button {
-    height: 35px;
-    width: 70px;
-    border-radius: 5px;
-    margin: 10px 10px 10px 0;
-    font-family: 'Heebo', sans-serif;
-    background: tomato;
-    color: #fff;
+#myBtn {
+    position: fixed;
+    bottom: 2vw;
+    left: 2vw;
+    z-index: 99;
+    font-size: 45px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: -1px;
+    border-radius: 50%;
+}
+  
+#myBtn:hover {
+    background-color: #555;
 }
 
-textarea {
-    margin: 7px 10px 0 0;
-    height: 70px;
-    font-size: 16px;
-    text-align: right;
-    box-shadow: rgb(142, 141, 141) 2px 2px 3px;
-    border-radius: 5px;
-    width: 446px;
-}
-
-ul {
-    padding: 0;
-}
-
-label {
-    margin: 10px;
-    color: tomato;
-    font-family: 'Heebo', sans-serif;
-    text-shadow: 2px 2px 3px #000000;
-    font-size: 2.3vw;
+  /* footer styles */
+.copyStyle {
+    text-align: center;
 }
 
 footer {
-    height: 20px;
-    width: 100%;
-    background: tomato;
-}
-
-.questionSectionStyle {
-    height: 60vh;
-
-}
-
-.inputMargin input {
-    margin-top: 7px;
     height: 30px;
-    font-size: 16px;
-    text-align: right;
-    box-shadow: 2px 2px 3px #8e8d8d;
-    border-radius: 5px;
+    width: 100%;
+    background: rgb(97, 97, 97);
+    color: #fff;
+    padding: 5px 10px;
+}
+
+/* header styles */
+
+.mainWidth {
+    width: 82%;
+}
+
+.subtitleStyle {
+    font-family: 'Heebo', sans-serif;
+    color: #ffb3b3;
+    text-shadow: 2px 2px 8px #0e0e0e;
+}
+
+.titleStyle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 6vw;
+    color: white;
+    text-shadow: 2px 2px 8px #0e0e0e;
+    text-decoration: underline;
 }
 
 .headerStyle {
     width: 100%;
     height: 40vh;
-    background: tomato;
-    background-image: url("images/buildings.jpg");
+    background-image: url("images/header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 0px -12vw;
 }
 
 .headerContent {
@@ -72,50 +75,15 @@ footer {
     margin: 10px 30px 10px 30px;
 }
 
-.noStyle {
-    color: black;
+/* menu styles */
+
+.socialIconsStyle:hover {
+    color: #fff;
 }
 
-.titleInMenuStyle {
-    margin: 200px 0 0 0;
-    text-align: center; 
-    font-family: 'Roboto', sans-serif;
-    text-decoration: underline;
-    transition: 0.2s ease;
-}
-
-.titleInMenuStyle:hover {
-    color: rgb(51, 51, 51);
-    font-size: 2.1vw;
-}
-
-.subtitleStyle {
-    font-family: 'Heebo', sans-serif;
-}
-
-.titleStyle {
-    font-family: 'Roboto', sans-serif;
-    font-size:6vw;
-    color: #FFF;
-    text-decoration: underline;
-}
-
-.flex {
-    display: flex;
-}
-
-.column {
-    flex-direction: column;
-}
-
-.justifyContent {
-    justify-content: center;
-}
-
-.menuStyle {
-    background: rgb(110, 101, 99);
-    width: 20%;
-    height: auto;
+.socialIconsStyle {
+    margin: 10px;
+    font-size: 20px;
 }
 
 .menu li {
@@ -131,21 +99,8 @@ footer {
     color: #fff;
 }
 
-
-.align {
-    align-items: center;
-}
-
-.alignLeft {
-    align-items: left;
-}
-
-.alignAlt {
-    align-items: flex-end;
-}
-
-.inputMargin {
-    margin: 2px;
+.noStyle {
+    color: black;
 }
 
 .align li a {
@@ -153,53 +108,268 @@ footer {
 }
 
 .align li a:hover {
-    color: tomato;
+    color: rgb(0, 0, 0);
     font-size: 1.5vw;
 }
 
-.iconFontSize {
-    font-size: 30px;
+ul {
+    padding: 0;
+}
+
+.menuStyle {
+    background: linear-gradient(#fff, rgb(97, 97, 97))fixed;
+    width: 18%;
+    height: auto;
+}
+
+.titleInMenuStyle {
+    margin: 200px 0 0 0;
+    text-align: center; 
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+    transition: 0.2s ease;
+    color: #a70303;
+    text-shadow: 1px 1px 4px #0e0e0e;
+}
+
+.titleInMenuStyle:hover {
+    color: #fff;
+    font-size: 2.1vw;
+}
+
+.menu li {
+    list-style-type: none;
+    text-align: right;
+    padding: 15px;    
+}
+
+.menu li a {
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: 'Heebo', sans-serif;
+    color: #fff;
+}
+
+.backToTopStyle {
+    font-size: 65px;
+    top: 61vw;
+    left: 73vw;
+    position: fixed;
+}
+
+.specificId {
+    margin-top: 164px;
+    padding: 0px 0 15px 0px;
+}
+
+
+
+
+/* index.php styles */
+.positionRelative {
+    position: relative;
+}
+
+.positionAbsolute {
+    position: absolute;
+}
+
+/* this is related to the background image, to have opacity. */
+.background1 {
+    position: relative;
+}
+
+/* this pseudo elmement is here to have opacity to the background image without afecting 
+the rest of the elements on it */
+.background1::after {
+  content: "";
+  background-image: url("images/explain.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -4vw;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+/* this is related to the background image, to have opacity. */
+.background2 {
+    position: relative;
+}
+
+/* this pseudo elmement is here to have opacity to the background image without afecting 
+the rest of the elements on it */
+.background2::after {
+  content: "";
+  background-image: url("images/coins.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -9vw;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+/* this is related to the background image, to have opacity. */
+.background3 {
+    position: relative;
+}
+
+/* this pseudo elmement is here to have opacity to the background image without afecting 
+the rest of the elements on it */
+.background3::after {
+  content: "";
+  background-image: url("images/columns.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -56vw;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+/* this is related to the background image, to have opacity. */
+.background4 {
+    position: relative;
+}
+
+/* this pseudo elmement is here to have opacity to the background image without afecting 
+the rest of the elements on it */
+.background4::after {
+  content: "";
+  background-image: url("images/buildings.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -3vw;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.content {
+    border: 1px solid grey;
+    border-radius: 50%;
+    width: 11vw;
+    height: 11vw;
+    background: linear-gradient(#9a4646, #fff);
+    color: #fff;
+    box-shadow: 0px 0px 30px #000000;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.content:hover {
+    background: linear-gradient(#fff, #9a4646);
+    color: #fff;
+}
+
+.sectionStyle {
+    width: 100%;
+    height: 50vh;
+}
+
+/* functional styles */
+
+.flex {
+    display: flex;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.flexDir {
+    flex-direction: row-reverse
+}
+
+.column {
+    flex-direction: column;
+}
+
+.justifyContent {
+    justify-content: center;
+}
+
+.justifyContentEnd {
+    justify-content: flex-end;
+}
+
+.align {
+    align-items: center;
+}
+
+.textAlign {
+    text-align: center;
 }
 
 .position {
     position: fixed;
 }
 
-.mainWidth {
-    width: 80%;
+
+/* aboutUs.php */
+.showButton {
+    display: block
 }
 
-.socialIconsStyle {
-    margin: 10px;
-    font-size: 20px;
+.hideButton {
+    display: none;
 }
 
-.navigationSquare {
-    width: 90px;
-    height: 90px;
-    border: 1px solid grey;
-    border-radius: 50%;
-    margin-right: 40px;
+.aboutUsText {
+    margin-right: 20px;
+    width: 362vw;
+    text-align: right;
 }
 
-.decoration {
-    text-decoration: none;
+.rivkaPicStyle {
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 10px 18px #888888;
+    margin: 6vw 0 5vw 0;
 }
 
-.socialIconsStyle:hover {
-    color: #fff;
+.more {
+    width: 70%;
+    text-align: right;
 }
 
-.questionStyle {
-    color: rgb(130, 130, 130);
-    font-family: 'Heebo', sans-serif;
-    text-shadow: 2px 2px 3px #000000;
-    font-size: 3vw;
+.contentMargin {
+    margin: 0 20px 20px 0;
 }
 
-.specificQuestionStyle {
-    margin: 20px;
+.aStyle {
+    color: blue;
+    cursor: pointer;
 }
+
+.textStyle {
+    width: 35vw;
+    margin: 0 10vw 5vw 0;
+}
+
+.aboutMe {
+    margin: 5vw 10vw 0 0;
+}
+
+/* contactUs styles */
 
 .iconStyle {
     background: #6f9fe6;
@@ -210,142 +380,297 @@ footer {
     background: rgb(187, 200, 111);
 }
 
-.backgroundUnit {
-    /* background-image: url("images/saving.jpg"); */
-    background: #e3e9f6;
-    background-repeat: no-repeat;
-    background-size: cover;
+.contactUsStyle {
+    direction: rtl;
+    width: 80%;
+    margin: 20px auto;
 }
 
-.backgroundUnit1 {
-    background-image: url("images/explain.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+.inputStyle {
+    width: 40%;
+    height: 30px;
+    font-size: 15px;
+    background: #ececec;
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: 5px 8px 22px #ffffff inset;
 }
 
-.backgroundUnit2 {
-    background-image: url("images/coins.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+.inputStyle:focus {
+    box-shadow: 5px 8px 22px #fddcdc inset;
 }
 
-.backgroundUnit3 {
-    background-image: url("images/hands.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+.textAreaStyle {
+    width: 90%;
+    height: 90px;
+    font-size: 15px;
+    background: #ececec;
+    border-radius: 5px;
+    box-shadow: 5px 8px 22px #ffffff inset;
+    border-width: 1px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
 }
 
-.backgroundUnit4 {
-    background-image: url("images/columns.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
+.textAreaStyle:focus {
+    box-shadow: 5px 8px 22px #fddcdc inset;
 }
 
-.backgroundUnit5 {
-    background-image: url("images/contact.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.backgroundUnit6 {
-    background-image: url("images/mounts.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.backgroundUnit1:hover {
-    filter: blur(0px);
-}
-.backgroundUnit2:hover {
-    filter: blur(0px);
-}
-.backgroundUnit3:hover {
-    filter: blur(0px);
-}
-.backgroundUnit4:hover {
-    filter: blur(0px);
-}
-
-.unit p {
-    padding: 0 111px 0 111px;
-    color: #26bfbf;
-    font-size: 20px;
-    text-shadow: 2px 2px 3px #000000;
-}
-
-.aboutUs p {
-    padding: 0 111px 0 111px;
-    color: #c79312;
-    font-size: 20px;
-    text-shadow: 2px 2px 3px #000000;
-}
-
-.unit h3 {
-    font-size: 25px;
-    text-shadow: 2px 2px 3px #000000;
+.firstButton {
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    background: dodgerblue;
     color: #fff;
+    font-size: 15px;
+    font-weight: 900;
+    margin: 10px 0;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #888888;
+    transition-duration: 0.5s;
 }
 
-.unitAlt2 h3{
-    color: black;
-    font-size: 25px;
-    text-shadow: 2px 2px 3px #000000;
+.firstButton:active {
+    background: #143f9b;
 }
 
-.unitAlt2 p {
-    padding: 0 111px 0 111px;
-    color: #26bfbf;
-    font-size: 20px;
-    text-shadow: 2px 2px 3px #000000;
+.formSection {
+    width: 50%;
 }
 
-.aboutUs h3 {
-    font-size: 25px;
-    text-shadow: 2px 2px 3px #000000;
+.contactUsImgStyle {
+    width: 50%;
 }
 
-.aboutUs {
-    border: 1.5px solid rgb(253, 248, 246);
-    width:100%;
+.mailIconStyle {
+    font-size: 20vw;
+    margin: auto;
+    text-shadow: 5px 10px 18px #888888;
+}
+
+/* registration.php styles */
+.registrationStyle {
     height: auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
-.unit {
-    border: 1.5px solid rgb(253, 248, 246);
-    width:100%;
-    height: 50vh;
+.succesMsg {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin: 60px;
+    font-size: 23px;
 }
 
-.unitAlt2 {
-    border: 1.5px solid rgb(253, 248, 246);
-    width:100%;
-    height: 50vh;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.paperPlaneStyle {
+    margin: 0 auto;
+    font-size: 100px;
+    text-shadow: 5px 10px 18px #888888;
 }
 
-.unitAlt {
-    border: 1.5px solid rgb(253, 248, 246);
-    width:100%;
-    height: auto;
+.firstButtonAlt {
+    width: 170px;
+    height: 30px;
+    border-radius: 5px;
+    background: dodgerblue;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 900;
+    margin: 43px auto;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #888888;
+    transition-duration: 0.5s;
+    text-decoration: none;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding-top: 7px;
 }
 
-/* id's */
+.firstButtonAlt:active {
+    background: #143f9b;
+}
 
-#specificId {
-    margin-top: 12vw;
+
+/* vision.php styles */
+
+.visionMainStyle {
+    margin: 5vw 10vw;
+}
+
+.visionTextStyle {
+    width: 30vw;
+    margin-top: 0;
+}
+
+.visionPictureStyle {
+    width: 25vw;
+    height: 31vw;
+    margin: 0 4vw 0 0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.buttonAltMarg {
+    margin: 43px 0;
+}
+
+/* growth.php styles */
+
+.grothPictureStyle {
+    width: 25vw;
+    height: 18vw;
+    margin: 0 4vw 0 0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+/* bigCopr.php */
+
+.linkStyle {
+    text-decoration: none;
+}
+
+
+
+
+/* MEDIA QUERYS */
+/* menu */
+@media screen and (max-width: 1024px) {
+    .menuStyle {
+        display: none;
+    }
+}
+
+/* index.php */
+@media screen and (max-width: 1024px) {
+    .mainWidth {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .sectionStyle {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .content {
+        border: 1px solid grey;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        background: linear-gradient(#9a4646, #fff);
+        color: #fff;
+        box-shadow: 0px 0px 30px #000000;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+
+    .headerStyle {
+        height: 54vw;
+    }
+}
+
+
+/* for the hamburger menu */
+@media screen and (max-width: 1024px) {
+    .container {
+        display: inline-block;
+        cursor: pointer;
+        position: fixed;
+        z-index: 20;
+        margin: 10px;
+    }
+      
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #ec6262;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+      
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+      
+    .change .bar2 {
+        opacity: 0;
+    }
+      
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    .hamburgerMenu {
+        width: 100%;
+        background: #d2d2d2;
+        position: fixed;
+        z-index: 10;
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hamburgerMenu {
+        display: none;
+    }
+}
+
+/* vision.php styles */
+
+/* aboutUs.php */
+@media screen and (max-width: 1024px) {
+    .mobileColumn {
+        flex-direction: column;
+    }
+
+    .mobileStyleForPicParent {
+        margin: 0 auto;
+    }
+
+    .mobilePicStyle {
+        width: 64vw;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 5px 10px 18px #888888;
+        margin: 5vw;
+    }
+
+    .textStyleMobile {
+        width: 80%;
+        margin: 0 10vw 5vw 0vw;
+    }
+
+    .moreMobile {
+        width: 90%;
+    }
+}
+
+/* contactUs.php */
+
+@media screen and (max-width: 1024px) {
+    .inputStyleMobile {
+        width: 78vw;
+    }
+}
+
+/* vision.php */
+
+@media screen and (max-width: 1024px) {
+
+    .picStyleMobile {
+        width: 80%;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .textStyleMobile {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .buttonAltMargMobile {
+        margin: 43px auto;
+    }
 }

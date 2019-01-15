@@ -22,18 +22,38 @@ $stmt = $pdo->prepare($sql);
 $stmt->execute($data);
 if (isset($fullName) && isset($phoneNumber) && isset($companyName)) {
     if ($fullName != "" && $phoneNumber != "" && $companyName != "" && filter_var(filter_var($mail,FILTER_SANITIZE_EMAIL),FILTER_VALIDATE_EMAIL)) {
-        echo ".הפרטים שלך התקבלו במערכת, אנחנו ניצור איתך קשר בקרוב";
-        include './include/menu.php';
+        ?>
+        <main class="registrationStyle flex column">
+            <p class="succesMsg">.הפרטים שלך התקבלו במערכת, אנחנו ניצור איתך קשר בקרוב</p>
+            <i class="fas fa-paper-plane paperPlaneStyle"></i>
+            <a href="./index.php" class="firstButtonAlt" type="button" name="back">חזרה לעמוד ראשי</a>
+        </main>
+        <?php
         $to="goelnathan@gmail.com";
         $subject= $fullName."שלח לך מייל ל! ";
         $text=$fullName."\r\n"."טלפון מספר:".$phoneNumber."\r\n"."אימייל:".$mail."\r\n";
         $headers="From: ".$mail."\r";
         mail($to,$subject,$text,$headers);
     } else {
-        echo "לא נשלח";
+        ?>
+        <main class="registrationStyle flex column">
+            <p class="succesMsg">.עקב תקלה הפרטים שלך לא התקבלו, אנה נסה שוב מאוחר יותר</p>
+            <i class="fas fa-exclamation-circle paperPlaneStyle"></i>
+            <a href="./index.php" class="firstButtonAlt" type="button" name="back">חזרה לעמוד ראשי</a>
+        </main>
+        <?php
     }
+    ?>
+        </div>
+            <?php
+            include './include/menu.php';
+            ?>
+        </div>
+        <?php
+        // include './include/footer.php';
+        ?>
+        </body>
+        </html>
+    <?php
 };
-
-include './include/footer.php';
 ?>
-
