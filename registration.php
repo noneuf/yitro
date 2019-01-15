@@ -50,7 +50,7 @@ if (isset($fullName) && isset($phoneNumber) && isset($companyName)) {
             ?>
         </div>
         <?php
-        include './include/footer.php';
+        // include './include/footer.php';
         ?>
         </body>
         </html>

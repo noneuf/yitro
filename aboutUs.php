@@ -1,17 +1,17 @@
 <?php
 include './include/header.php';
 ?>
-            <main class="flex">
+            <main class="flex flexDir">
                 <span><img class="rivkaPicStyle"src="./images/rivka.jpg"/></span>
-                <span class="flex column contentMargin alignContent">
+                <span class="flex column contentMargin">
                     <h3 class="aboutMe"> קצת עלי:</h3>
-                    <div class="textStyle flex column alignContent">
+                    <div class="textStyle flex column">
                         <p class="more"> שמי רבקה גואל, את הדרך שלי בתחום הייעוץ התחלתי דווקא בצבא: התגייסתי לחיל הים לתפקיד
                             בקרית סימולטורים. התפקיד העיקרי שלי היה לאמן יחידות שונות בחייל תוך ליווי ומתן ביקורת בונה
                             ליחדות השונות, שם גיליתי את מתנת הייעוץ שלי. אחרי השחרור שלי מהמערכת הצבאית התקדמתי
                             לכוון למידת תואר ראשון בכלכלה וניהול.
                         </p>
-                        <a class="showButton aStyle" onclick="showMore()">...קרא עוד</a>
+                        <a class="showButton aStyle" onclick="showMore()">קרא עוד...</a>
                         <p class="more" style="display: none" id="showHide"> 
                             לאחר שנות לימודים מוצלחות, התחלתי לעסוק בייעוץ פננסי
                             ונתקלתי בקושי ואפילו בכישלון שארגונים כאלה ואחרים שוקעים בהם כאשר אינם מתנהלים נכון
@@ -22,7 +22,7 @@ include './include/header.php';
                             ארגונים ישנים שכבר מצויים שנים בתחומם. אני מלווה ומייעצת לאותם גופים בשילוב תחום הפיננסים
                             והתחום האירגוני.
                         </p>
-                        <a class="hideButton aStyle" onclick="showless()">...קרא פחות</a>
+                        <a class="hideButton aStyle" onclick="showless()">קרא פחות...</a>
                     </div>
                 </span>
             </main>
@@ -32,7 +32,7 @@ include './include/header.php';
         ?>
     </div>
     <?php
-    include './include/footer.php'
+    // include './include/footer.php'
     ?>
 </body>
 </html>

@@ -38,7 +38,7 @@ include './include/header.php';
         ?>
     </div>
     <?php
-    include './include/footer.php';
+    // include './include/footer.php';
     ?>
 </body>
 </html>

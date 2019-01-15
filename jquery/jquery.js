@@ -7,4 +7,9 @@ $(document).ready(function(){
         $(this).css("display", "none");
         $(".showButton").css("display", "block")
     });
+
+    // for the hamburger menu
+    $(".container").click(function(){
+        $(".hamburgerMenu").slideToggle(400);
+    })
 });
