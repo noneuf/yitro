@@ -1,4 +1,5 @@
 <?php
+$pageTitle = "Small corporations";
 include './include/header.php';
 ?>
             <main class="visionMainStyle flexDir flex mobileColumn">

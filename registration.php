@@ -1,4 +1,5 @@
 <?php
+$pageTitle = "Registration";
 include './config/db.php';
 include './include/header.php';
 

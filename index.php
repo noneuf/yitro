@@ -1,4 +1,5 @@
 <?php
+$pageTitle = "Home";
 include './config/db.php';
 include './include/header.php';
 ?>

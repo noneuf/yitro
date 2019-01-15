@@ -1,4 +1,5 @@
 <?php
+$pageTitle = "Our vision";
 include './include/header.php';
 ?>
             <main class="visionMainStyle flexDir flex mobileColumn">
