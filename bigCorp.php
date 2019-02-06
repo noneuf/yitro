@@ -3,7 +3,7 @@ $pageTitle = "Big Corporations";
 include './include/header.php';
 ?>
             <main class="visionMainStyle flexDir flex mobileColumn">
-                <img class="grothPictureStyle picStyleMobile" src="./images/bigCorp.jpg"/>
+                <img class="grothPictureStyle picStyleMobile" src="./images/Optimized-bigCorp.jpg"/>
                 <div class="flex column">
                     <p class="visionTextStyle textStyleMobile">
                     ארגונים גדולים בדרך כלל מתאפיינים בקצב מסוים שבו ארגון מתנהל. ישנם המון גורמים המשפיעים על תהליכים שונים באירגון ולכן ליווי ויעוץ ארגוני לארגון גדולים מצריך חשיבה שונה וליווי מתמיד לתוכנית היעוצית שנבנתה לארגון תוך גימישות לנתונים בשטח.                    

@@ -3,7 +3,7 @@ $pageTitle = "About us";
 include './include/header.php';
 ?>
             <main class="flex flexDir mobileColumn">
-                <span class="mobileStyleForPicParent"><img class="rivkaPicStyle mobilePicStyle"src="./images/rivka.jpg"/></span>
+                <span class="mobileStyleForPicParent"><img class="rivkaPicStyle mobilePicStyle"src="./images/Optimized-rivka.jpg"/></span>
                 <span class="flex column contentMargin">
                     <h3 class="aboutMe"> קצת עלי:</h3>
                     <div class="textStyle textStyleMobile flex column">

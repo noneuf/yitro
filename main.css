@@ -64,7 +64,7 @@ footer {
 .headerStyle {
     width: 100%;
     height: 40vh;
-    background-image: url("images/header.jpg");
+    background-image: url("images/Optimized-header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0px -12vw;
@@ -183,7 +183,7 @@ ul {
 the rest of the elements on it */
 .background1::after {
   content: "";
-  background-image: url("images/explain.jpg");
+  background-image: url("images/Optimized-explain.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -4vw;
@@ -205,7 +205,7 @@ the rest of the elements on it */
 the rest of the elements on it */
 .background2::after {
   content: "";
-  background-image: url("images/coins.jpg");
+  background-image: url("images/Optimized-coins.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -9vw;
@@ -249,7 +249,7 @@ the rest of the elements on it */
 the rest of the elements on it */
 .background4::after {
   content: "";
-  background-image: url("images/buildings.jpg");
+  background-image: url("images/Optimized-buildings.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -3vw;
@@ -326,7 +326,7 @@ the rest of the elements on it */
 
 /* aboutUs.php */
 .showButton {
-    display: block
+    display: block;
 }
 
 .hideButton {
@@ -608,7 +608,7 @@ the rest of the elements on it */
         background: #d2d2d2;
         position: fixed;
         z-index: 10;
-        /* display: none; */
+        display: none;
     }
 }
 

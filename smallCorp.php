@@ -3,7 +3,7 @@ $pageTitle = "Small corporations";
 include './include/header.php';
 ?>
             <main class="visionMainStyle flexDir flex mobileColumn">
-                <img class="grothPictureStyle picStyleMobile" src="./images/smallCorp.jpg"/>
+                <img class="grothPictureStyle picStyleMobile" src="./images/Optimized-smallCorp.jpg"/>
                 <div class="flex column">
                     <p class="visionTextStyle textStyleMobile">
                     ארגונים קטנים  מצריכים ליווי ויעוץ שונה מארגונים גדולים. בדרך כלל ארגונים קטנים הם יותר גמישים, היכולת שלהם ליישם שינוים  היא יותר מהירה אך ישנם אתגרים רבים אחרים. לכן ליווי ויעוץ ארגוני מצריכים חשיבה שלוקחת בחשבון את מכלול הנתונים ושמתאימה את התוכנית לארגון הספציפי.                    

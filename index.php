@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Home";
-include './config/db.php';
+// include './config/db.php';
 include './include/header.php';
 ?>
             <main>
