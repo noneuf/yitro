@@ -61,10 +61,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->SMTPSecure = 'tls';
     //Whether to use SMTP authentication
     $mail->SMTPAuth = true;
-    //Username to use for SMTP authentication - use full email address for gmail
-    $mail->Username = "goelnathan@gmail.com";
-    //Password to use for SMTP authentication
-    $mail->Password = "orkmenqvjfvizavc";
+    //Username and password for SMTP authentication are loaded from environment variables
+    $gmailUser = getenv('GMAIL_USERNAME');
+    $gmailPass = getenv('GMAIL_PASSWORD');
+
+    if (!$gmailUser || !$gmailPass) {
+        echo "Email credentials are not configured.";
+        exit;
+    }
+
+    $mail->Username = $gmailUser;
+    $mail->Password = $gmailPass;
 
 
     //It's important not to use the submitter's address as the from address as it's forgery,
